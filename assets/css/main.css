@@ -198,6 +198,16 @@ input, select, textarea {
 			margin: 0 0 2rem 0;
 		}
 
+		h1.lang, h2.lang, h3.lang, h4.lang, h5.lang, h6.lang {
+			border-bottom: solid 1px #ffffff;
+			width: -moz-max-content;
+			width: -webkit-max-content;
+			width: -ms-max-content;
+			width: max-content;
+			padding-bottom: 0.5rem;
+			margin: 0 0 2rem 0;
+		}
+
 	h1 {
 		font-size: 2.25rem;
 		line-height: 1.3;
