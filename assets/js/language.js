@@ -3,11 +3,13 @@ var arrLang = {
     "INTRO": "Introduction",
     "WORK": "Our Projects",
     "CONTACT": "Contact Us",
+    "COPY": "Powered by Cubik65536｜Template Design: ",
   },
   "zh": {
     "INTRO": "关于我们",
     "WORK": "项目展示",
     "CONTACT": "联络我们",
+    "COPY": "由Cubik65536强力驱动｜模版设计：",
   }
 };
 
