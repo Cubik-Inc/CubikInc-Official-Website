@@ -25,7 +25,7 @@ var arrLang = {
     "COPY": "Copyright © 2020 Cubik65536. All Rights Reserved.",
     "CCBY": "All contents under: ",
     "NAME": "Powered by Cubik65536｜Template Design: ",
-    "ONLYZH": "(CURRENT ONLY AVAILABLE IN CHINESE)",
+    "ONLYZH": "(CURRENTLY ONLY AVAILABLE IN CHINESE)",
   },
   "zh": {
     "INTRO": "关于我",
