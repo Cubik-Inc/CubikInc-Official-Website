@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="zh-CN" xml:lang="zh-CN">
 
 <head>
 	<title>Cubik Inc.</title>
@@ -23,36 +23,13 @@
 	<div id="page-wrapper">
 
 		<!-- Header -->
-		<header id="header" class="alt">
-			<h1><a href="index.html">Cubik Inc.</a></h1>
-			<nav>
-				<a href="#lang"><i class="fas fa-language"></i></a>
-				<a href="#menu">菜单</a>
-			</nav>
-		</header>
+		<header v-html="header"></header>
 
 		<!-- Menu -->
-		<nav id="menu">
-			<div class="inner">
-				<h2>菜单</h2>
-				<ul class="links">
-					<li><a href="index.html">主页</a></li>
-				</ul>
-				<a href="#" class="close"></a>
-			</div>
-		</nav>
+		<nav v-html="menu"></nav>
 
-		<nav id="lang">
-			<div class="inner">
-				<h2><i class="fas fa-language fa-3x"></i></h2>
-				<ul class="links">
-					<li><a href="../zh/index.html">简体中文</a></li>
-					<li><a href="../zh-tr/index.html">繁體中文</a></li>
-					<li><a href="../en/index.html">English</a></li>
-				</ul>
-				<a href="#" class="close"></a>
-			</div>
-		</nav>
+		<!-- Lang -->
+		<nav v-html="lang"></nav>
 
 		<!-- Banner -->
 		<section id="banner">
@@ -66,16 +43,47 @@
 		<!-- Wrapper -->
 		<section id="wrapper">
 
+			<!-- Intro -->
+			<section id="intro" class="wrapper spotlight style2">
+				<div class="inner">
+					<div class="content">
+						<h2 class="major">自我介绍</h2>
+						<p>嗨～我是Cubik，一个个人开发者💻，熟悉的语言有Swift⚒，Java☕️和Python，⌘macOS + Centos +
+							Windows用户。<br />目前还是一名中学生，与父母一起居住在加拿大魁北克省蒙特利尔。
+							休闲的时候会玩F1系列和Minecraft。偶尔看看SCP，做些翻译工作。我还是Minecraft服务器<a
+								href="https://www.newnan.city">牛腩小镇</a>的管理组成员，负责其官网的运维。<br />
+							我偶尔会写一些小东西放在我的博客上，你可以去关注一下：
+						</p>
+						<a href="https://blog.cubik65536.top" class="special">我的博客</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Cover -->
+			<section id="cover" class="wrapper alt spotlight style3">
+				<div class="inner">
+					<div class="content">
+						<h2 class="major">关于此网站</h2>
+						<p>我从小就非常喜欢计算机🧑🏻‍💻，每出现一样新技术都想试试，也一直希望自己能有个自己的网站。
+							这个网站是为了自己搭建的，是为了自己玩，为了实现自己的梦想。同时，这个网站也是为了你们搭建的。我希望我的项目，我的想法可以被其他人看见。让我们一起，无限进步！
+						</p>
+						<a href="#one" class="special">了解更多</a>
+					</div>
+				</div>
+			</section>
+
 			<!-- One -->
 			<section id="one" class="wrapper spotlight style1">
 				<div class="inner">
-					<a href="#" class="image"><img src="../images/pic01.jpg" alt="" /></a>
+					<a href="#one" class="image"><img src="../images/app.png" alt="" /></a>
 					<div class="content">
-						<h2 class="major">Magna arcu feugiat</h2>
-						<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet
-							turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla
-							dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-						<a href="#" class="special">Learn more</a>
+						<h2 class="major">我的项目</h2>
+						<p>
+							在这里，你可以了解到我的各种项目。我通常会提供它们的发行版。
+							<br />
+							它们中的一部分是开源的，另一部分则不是。同时，我将会以将会以相对较高的频率更新部分项目，其他项目虽然也会被不断维护，但频率将会相对较低。
+						</p>
+						<a href="" class="special">了解更多</a>
 					</div>
 				</div>
 			</section>
@@ -83,111 +91,47 @@
 			<!-- Two -->
 			<section id="two" class="wrapper alt spotlight style2">
 				<div class="inner">
-					<a href="#" class="image"><img src="../images/pic02.jpg" alt="" /></a>
+					<a href="#two" class="image"><img src="../images/vscode-logo.jpg" alt="" /></a>
 					<div class="content">
-						<h2 class="major">Tempus adipiscing</h2>
-						<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet
-							turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla
-							dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-						<a href="#" class="special">Learn more</a>
+						<h2 class="major">我的点子</h2>
+						<p>
+							这里的所有项目都是开源的，但通常只会提供Demo和非正式的Release。用于获得并
+							<br />
+							实践一些点子或学习/练习新的代码/技术/技能。
+							<br />
+							同时我也希望可以和大家一起交流，欢迎各位fork/star/提交issue和pull request
+						</p>
+						<a href="" class="special">了解更多</a>
 					</div>
 				</div>
 			</section>
 
 			<!-- Three -->
-			<section id="three" class="wrapper spotlight style3">
+			<section id="two" class="wrapper spotlight style3">
 				<div class="inner">
-					<a href="#" class="image"><img src="../images/pic03.jpg" alt="" /></a>
+					<a href="#two" class="image"><img src="../images/scp_logo.jpg" alt="" /></a>
 					<div class="content">
-						<h2 class="major">Nullam dignissim</h2>
-						<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet
-							turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla
-							dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-						<a href="#" class="special">Learn more</a>
+						<h2 class="major">SCP基金会</h2>
+						<p>
+							我也是一个SCP迷。虽然最近并不怎么活跃，但我仍然持续关注着SCP。同时，
+							<br />
+							我也在持续翻译着一些SCP文档，你可以通过查看我的作者页来看看我的作品！
+						</p>
+						<a href="https://scp-wiki-cn.wikidot.com/drturing-s-personnel-file" class="special">前往我的作者页</a>
 					</div>
-				</div>
-			</section>
-
-			<!-- Four -->
-			<section id="four" class="wrapper alt style1">
-				<div class="inner">
-					<h2 class="major">Vitae phasellus</h2>
-					<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat.
-						Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem
-						lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-					<section class="features">
-						<article>
-							<a href="#" class="image"><img src="../images/pic04.jpg" alt="" /></a>
-							<h3 class="major">Sed feugiat lorem</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus
-								ultrices.</p>
-							<a href="#" class="special">Learn more</a>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="../images/pic05.jpg" alt="" /></a>
-							<h3 class="major">Nisl placerat</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus
-								ultrices.</p>
-							<a href="#" class="special">Learn more</a>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="../images/pic06.jpg" alt="" /></a>
-							<h3 class="major">Ante fermentum</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus
-								ultrices.</p>
-							<a href="#" class="special">Learn more</a>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="../images/pic07.jpg" alt="" /></a>
-							<h3 class="major">Fusce consequat</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus
-								ultrices.</p>
-							<a href="#" class="special">Learn more</a>
-						</article>
-					</section>
-					<ul class="actions">
-						<li><a href="#" class="button">Browse All</a></li>
-					</ul>
 				</div>
 			</section>
 
 		</section>
 
 		<!-- Footer -->
-		<section id="footer">
-			<div class="inner">
-				<h2 class="major">联系我们</h2>
-				<p>如果您对此页上的内容有疑问，或者需要帮助，请通过以下方式联系我们，我们会尽快回复！</p>
-				<ul class="contact">
-					<li class="icon solid fa-envelope"><a
-							href="mailto:contact@cubik65536.top">contact@cubik65536.top（推荐）</a></li>
-					<li class="icon brands fa-qq"><a
-							href="https://qm.qq.com/cgi-bin/qm/qr?k=6O7qKX3pOeUvXE6lWmkexm9cIeTMzTw7&authKey=zAcRN8AqYI2qCJvUQ0Pu8XcRW3TPlqbLHBVSx4urRVTHRk2oHzPxAg4WJTXqmxDh&noverify=0">
-							Cubik Inc. 官方QQ群</a>
-					</li>
-					<li class="icon brands fa-discord"><a href="">Cubik Inc. 官方 Discord（尚未开通）</a>
-					</li>
-				</ul>
-				<ul class="copyright" style="margin: 0 0 0.5em 0;">
-					<li>
-						Copyright &copy; 2020-
-						<script>document.write(new Date().getFullYear())</script>
-						Cubik Inc. (Cubik65536) 保留所有权利。
-					</li>
-					<li>模版设计：<a href="http://html5up.net">HTML5 UP</a></li>
-					<li>由Cubik65536强力驱动</li>
-					<li>
-						<a href="https://github.com/Cubik65536">
-							<i class="icon brands fa-github"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</section>
+		<section v-html="footer"></section>
 
 	</div>
 
 	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="assets/js/vue_page.js"></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
